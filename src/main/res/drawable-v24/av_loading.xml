@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:drawable="@drawable/v_loading"
+    tools:targetApi="lollipop">
+    <target
+        android:name="dian_1"
+        android:animation="@animator/oa_loading_1" />
+    <target
+        android:name="dian_2"
+        android:animation="@animator/oa_loading_2" />
+    <target
+        android:name="dian_3"
+        android:animation="@animator/oa_loading_3" />
+</animated-vector>
