@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="110dp"
+    android:height="50dp"
+    android:viewportWidth="110"
+    android:viewportHeight="50">
+    <path
+        android:name="dian_1"
+        android:fillColor="#FFE7A2"
+        android:strokeColor="#000"
+        android:strokeAlpha="0"
+        android:pathData="M 26.785714 13.000002 C 33.9654157478 13.000002 39.785714 18.8203002522 39.785714 26.000002 C 39.785714 33.1797037478 33.9654157478 39.000002 26.785714 39.000002 C 19.6060122522 39.000002 13.785714 33.1797037478 13.785714 26.000002 C 13.785714 18.8203002522 19.6060122522 13.000002 26.785714 13.000002 Z" />
+    <path
+        android:name="dian_2"
+        android:fillColor="#FFB27C"
+        android:strokeColor="#000"
+        android:strokeAlpha="0"
+        android:pathData="M 57.785714 13.000002 C 64.9654157478 13.000002 70.785714 18.8203002522 70.785714 26.000002 C 70.785714 33.1797037478 64.9654157478 39.000002 57.785714 39.000002 C 50.6060122522 39.000002 44.785714 33.1797037478 44.785714 26.000002 C 44.785714 18.8203002522 50.6060122522 13.000002 57.785714 13.000002 Z" />
+    <path
+        android:name="dian_3"
+        android:fillColor="#C48157"
+        android:strokeColor="#000"
+        android:strokeAlpha="0"
+        android:pathData="M 89.785714 13.000002 C 96.9654157478 13.000002 102.785714 18.8203002522 102.785714 26.000002 C 102.785714 33.1797037478 96.9654157478 39.000002 89.785714 39.000002 C 82.6060122522 39.000002 76.785714 33.1797037478 76.785714 26.000002 C 76.785714 18.8203002522 82.6060122522 13.000002 89.785714 13.000002 Z" />
+</vector>
