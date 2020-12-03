@@ -1,6 +1,5 @@
 package com.hviewtech.wowpay.merchant.core.base
 
-import com.hviewtech.wowpay.merchant.core.utils.ToastUtil
 import android.content.Context
 import android.content.Intent
 import android.content.pm.ActivityInfo
@@ -14,8 +13,7 @@ import androidx.core.content.ContextCompat
 import com.hviewtech.wowpay.merchant.core.R
 import com.hviewtech.wowpay.merchant.core.bean.BaseResponse
 import com.hviewtech.wowpay.merchant.core.config.Const.REQUEST_CODE
-import com.hviewtech.wowpay.merchant.core.net.ApiService
-import com.hviewtech.wowpay.merchant.core.net.RetrofitClient
+import com.hviewtech.wowpay.merchant.core.utils.ToastUtil
 import io.reactivex.disposables.CompositeDisposable
 import kotlinx.android.synthetic.main.activity_base_loading.*
 
@@ -28,7 +26,6 @@ abstract class BaseActivity : AppCompatActivity() {
     private var loadingCount = 0
     private var isOpenDialog = false
     protected val compositeDisposable = CompositeDisposable()
-    protected val api = RetrofitClient.instance.create(ApiService::class.java)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //限制整个app横屏显示
