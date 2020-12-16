@@ -14,7 +14,6 @@ import com.hviewtech.wowpay.merchant.core.R
 import com.hviewtech.wowpay.merchant.core.bean.BaseResponse
 import com.hviewtech.wowpay.merchant.core.config.Const.REQUEST_CODE
 import com.hviewtech.wowpay.merchant.core.utils.ToastUtil
-import io.reactivex.disposables.CompositeDisposable
 import kotlinx.android.synthetic.main.activity_base_loading.*
 
 const val NEED_LOADING = "need_loading"
@@ -25,7 +24,6 @@ const val LOADING_BLOCK_NONE = 2
 abstract class BaseActivity : AppCompatActivity() {
     private var loadingCount = 0
     private var isOpenDialog = false
-    protected val compositeDisposable = CompositeDisposable()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //限制整个app横屏显示
@@ -121,7 +119,6 @@ abstract class BaseActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        compositeDisposable.dispose()
     }
 
     open fun openActivity(context: Context) {
