@@ -12,13 +12,11 @@ import androidx.fragment.app.Fragment
 import com.hviewtech.wowpay.merchant.core.R
 import com.hviewtech.wowpay.merchant.core.bean.BaseResponse
 import com.hviewtech.wowpay.merchant.core.config.Const.REQUEST_CODE
-import io.reactivex.disposables.CompositeDisposable
 import kotlinx.android.synthetic.main.activity_base_loading.*
 
 abstract class BaseFragment : Fragment() {
     private lateinit var loadingImage: ImageView
     private var loadingCount = 0
-    protected val compositeDisposable = CompositeDisposable()
     override fun onAttach(context: Context) {
         super.onAttach(context)
     }
@@ -76,7 +74,6 @@ abstract class BaseFragment : Fragment() {
 
     override fun onDestroy() {
         super.onDestroy()
-        compositeDisposable.dispose()
     }
 
 }

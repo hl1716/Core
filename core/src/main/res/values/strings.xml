@@ -1,2 +1,3 @@
 <resources>
+    <string name="un_know_host">请确认网络连接</string>
 </resources>
